@@ -1,0 +1,15 @@
+/*Selección a través de etiquetas */
+h1{
+    color:black;
+    font-size: 50px;
+}
+
+/* Selección a través de clases (.) */
+.rojo{
+    color: red;
+}
+
+/* Selección a través de ID (#) */
+#amarillo{
+    color: yellow;
+}
