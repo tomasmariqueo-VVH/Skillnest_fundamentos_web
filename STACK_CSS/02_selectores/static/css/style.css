@@ -1,15 +1,52 @@
 /*Selección a través de etiquetas */
-h1{
-    color:black;
+h1 {
+    color: black;
     font-size: 50px;
 }
 
 /* Selección a través de clases (.) */
-.rojo{
+.rojo {
     color: red;
 }
 
 /* Selección a través de ID (#) */
-#amarillo{
+#amarillo {
     color: yellow;
+}
+
+/* ----- Sitio de ejemplo ----- */
+h1 {
+    color: royalblue;
+    /* Color de texto*/
+}
+
+
+p {
+    text-align: right;
+    /* text-align: Disposición del texto - izquierda - centrado - derecha */
+}
+
+.is-centered {
+    text-align: center;
+    /* Texto centrado */
+}
+
+
+.is-orange {
+    color: darkorange;
+    /* Texto naranja*/
+}
+
+#container {
+    width: 200px; /* Ancho */
+    height: 200px; /* Altura */
+    padding: 10px; /* Espacio interno */
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Esquina redondeada */
+    margin-top: 20px; /* Margen superior (Espacio externo) */
+    margin-left: 25px; /* Margen izquierdo */
 }
