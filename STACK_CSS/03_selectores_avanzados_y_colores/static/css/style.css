@@ -57,10 +57,13 @@ h1 {
     font-weight: bold;
     color: gold;
 }
-form{
+
+form {
     padding: 20px;
 }
-input[type="text"] { /* Selecciona todos los elementos de [type="text"] */
+
+input[type="text"] {
+    /* Selecciona todos los elementos de [type="text"] */
     border: 2px solid royalblue;
     padding: 3px;
 }
@@ -68,18 +71,23 @@ input[type="text"] { /* Selecciona todos los elementos de [type="text"] */
 input[type="submit"] {
     color: white;
     background-color: mediumvioletred;
-    border: none; /* Quita el borde del botón */
+    border: none;
+    /* Quita el borde del botón */
     padding: 5px;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
 }
+
 .color_nombre {
     color: tomato;
     background-color: gray;
 }
+
 .color_rgb {
     color: rgb(74, 11, 223);
     background-color: yellow;
 }
+
 .color_hex {
     color: #1661d1;
     background-color: lightgray;
