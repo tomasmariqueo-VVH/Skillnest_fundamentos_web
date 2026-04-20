@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+.encabezado{
+    padding: 40px;
+
+}
+.titulo{
+    margin-bottom: 20px;
+}
+
+.sinDecoracion{
+    text-decoration: none;
+    color: #137DB2;
+}
+
+.caja{
+    display: inline-block; /* Elementos en bloques */
+    padding: 50px;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.rojo {
+    background-color: #EE433A;
+}
+
+.azul {
+    background-color: #008DD2;
+}
+
+.verde {
+    background-color: #00C56A;
+}
