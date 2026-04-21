@@ -14,7 +14,7 @@
 }
 
 .encabezado {
-    padding: 40px;
+    padding: 20px;
 
 }
 
@@ -30,11 +30,13 @@
 .caja {
     display: inline-block;
     /* Elementos en bloques */
-    padding: 60px;
+
     color: white;
     font-weight: bold;
     width: 300px;
     border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 .rojo {
@@ -60,10 +62,12 @@
 .naranja {
     background-color: #FC9800;
 }
-.blanco{
+
+.blanco {
     background-color: white;
 }
 
-.p{
+.p {
     color: black;
+    padding: 20px;
 }
