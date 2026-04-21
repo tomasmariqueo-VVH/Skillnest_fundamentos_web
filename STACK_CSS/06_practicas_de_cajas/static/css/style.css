@@ -45,6 +45,7 @@
 
 .azul {
     background-color: #008DD2;
+
 }
 
 .verde {
@@ -70,4 +71,9 @@
 .p {
     color: black;
     padding: 20px;
+}
+
+.cuerpoCaja {
+    padding: 20px;
+    text-align: center;
 }
