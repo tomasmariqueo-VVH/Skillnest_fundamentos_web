@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* Comtabiliza los bordes*/
+    /* Contabiliza los bordes*/
+    /* outline: solid 1px black; Bordes de lineas */
 }
 
 .encabezado {
@@ -43,13 +44,69 @@
 }
 
 .parrafo1 {
-    font-size: 30px; /* Tamaño fijo */
+    font-size: 30px;
+    /* Tamaño fijo */
 }
 
 .link1 {
-    font-size: 300%; /* Tamaño proporcional */
+    font-size: 300%;
+    /* Tamaño proporcional */
 }
 
 .cursiva {
     font-style: italic;
+    margin-top: 15px;
 }
+
+/*
+📦 Manejo del contenido con overflow: hidden, scroll, auto
+*/
+
+div {
+    width: 200px;
+    height: 100px;
+}
+
+.example1 {
+    background-color: aliceblue;
+    height: 100px;
+    width: 300px;
+}
+
+.example2 {
+    background-color: blanchedalmond;
+    height: 100px;
+    width: 300px;
+}
+
+.example3 {
+    background-color: beige;
+    height: 100px;
+    width: 300px;
+}
+
+.caja {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    /* Elementos en bloque o columnas */
+}
+
+.hidden {
+    /* Oculta los elementos que sobresalen del contenedor */
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+/* Fondo y colores */
+.banner {
+    background: red url("/STACK_CSS/06_tamanos/static/images/momazosdiego.png") no-repeat fixed center;
+}
+
