@@ -107,6 +107,18 @@ div {
 
 /* Fondo y colores */
 .banner {
-    background: red url("/STACK_CSS/06_tamanos/static/images/momazosdiego.png") no-repeat fixed center;
+    height: 500px;
+    width: 850px;
+    background: red url("/STACK_CSS/06_tamanos/static/images/momazosdiego.png") no-repeat fixed center center;
+    background-size: 60%;
 }
 
+/* Bordes redondeados */
+
+.boton_redondeado {
+    border: 2px dotted green;
+}
+
+.caja_redondeada {
+    border: 1px solid black;
+}
