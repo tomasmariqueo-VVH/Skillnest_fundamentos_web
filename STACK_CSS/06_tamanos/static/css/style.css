@@ -27,6 +27,10 @@
     padding: 20px;
 }
 
+.row{
+    padding: 20px;
+}
+
 /* Tamaños ejemplos CSS*/
 
 .aceptar {
@@ -110,15 +114,75 @@ div {
     height: 500px;
     width: 850px;
     background: red url("/STACK_CSS/06_tamanos/static/images/momazosdiego.png") no-repeat fixed center center;
-    background-size: 60%;
+    background-size: 60%; /* Aumenta el tamaño de la imagen dentro del contenedor */
 }
 
-/* Bordes redondeados */
+/* Bordes y estilos */
+
+.cancelar {
+    border: 2px dotted green; /* dotted: linea segmentada */
+    padding: 15px;
+    cursor: pointer;
+}
+
+.articulo {
+    border: 2px solid black; /* solid: linea sólida */
+    height: 50px;
+    width: 100px;
+}
+
+/* Bordes redondeados*/
 
 .boton_redondeado {
-    border: 2px dotted green;
+    border-radius: 5px; /* Redondeada las esquinas */
+    padding: 15px 40px;
+    cursor: pointer;
 }
 
 .caja_redondeada {
-    border: 1px solid black;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 10px 16px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 50%; /* 50% de radius: Circulo perfecto */
+}
+
+.cajitas{
+    width: 200px;
+    height: 50px;
+    outline: solid 1px black;
+}
+
+.box1{
+background-color: aqua;
+padding: 10px; /* Padding aplicado en todos los lados*/
+}
+
+.box2{
+background-color: darkgoldenrod;
+padding-top: 0px; /* Espacio interno: Arriba */
+padding-right: 5px; /* Espacio interno: derecha */
+padding-bottom: 0px; /* Espacio interno: abajo */
+padding-left: 5px; /* Espacio interno: izquierda */
+/* padding: 0px 5px 0px 5px; ---> aplicando en todos los lados */
+/* padding: 0px 5px ---> 0px del eje (Y) 5px del eje (X) */
+}
+
+.box3{
+background-color: chartreuse;
+margin: 10px; /* Margen externo: separa los elementos */
+}
+
+.box4{
+background-color: gold;
+margin: 0px 10px; /* eje X modificado con margin */
+padding: 5px 0px; /* eje Y modificado con padding */
+}
+
+.box5{
+    float: left;
+    width: 30%;
 }

@@ -1,0 +1,39 @@
+*{
+    padding: 100;
+    margin: 100;
+    box-sizing: border-box;
+}
+
+.buscar{
+    margin-top: 100px;
+    margin-left: 530px;
+    border-radius: 20px 20px; /* Redondeada las esquinas */
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+.plus{
+    margin-top: 20px;
+    margin-left: 573px;;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 10px 16px;
+    background-color: #F8A504;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.crear_cuenta{
+    margin-top: 20px;
+    margin-left: 520px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    padding: 10px 16px;
+    background-color: #3590FF;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
