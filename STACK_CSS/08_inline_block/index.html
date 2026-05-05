@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tomás Mariqueo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo mini-sitio Inline/block</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Mi sitio web</h1>
+        <nav class="menu"> <!--Menú de navegación-->
+            <a href="" class="boton">Inicio</a>
+            <a href="" class="boton">Servicios</a>
+            <a href="" class="boton">Contacto</a>
+        </nav>
+    </header>
+    <main class="contenedor_principal">
+        <!--Texto con elementos inline-->
+        <section>
+            <h2>Texto con elementos inline</h2>
+            <p>
+                Este es un ejemplo donde usamos <span class="resaltado">inline</span>
+                para resaltar texto sin romper la linea del párrafo.
+            </p>
+        </section>
+        <!--Tarjetas (inline-block)-->
+        <section class="contenedor_tarjetas">
+            <h2>Tarjetas (inline-block)</h2>
+            <div class="box">Tarjeta 1</div>
+            <div class="box">Tarjeta 2</div>
+            <div class="box">Tarjeta 3</div>
+        </section>
+        <!--Bloques (block)-->
+        <section>
+            <h2>Bloques (block)</h2>
+            <div class="bloque">Bloque 1</div>
+            <div class="bloque">Bloque 2</div>
+            <div class="bloque">Bloque 3</div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <p>2026 -Todos los derechos reservados.</p>
+    </footer>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

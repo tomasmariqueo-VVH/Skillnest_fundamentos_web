@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+    background-color: #1E3A5E;
+    color: white;
+}
+
+.menu {
+    padding: 5px;
+    background-color: #2C5182;
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.caja_blanca {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px gray;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: inline-block;
+
+}
+
+.caja_azul {
+    overflow: hidden;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    background-color: #2C5182;
+    color: white;
+    border-radius: 5px 5px;
+}
+
+.caja1 {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background-color: #00AEE5;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px 5px;
+}
+
+.caja2 {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background-color: #00AEE5;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px 5px;
+}
+
+.caja3 {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background-color: #00AEE5;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px 5px;
+}
+
+h2{
+    padding: 30px;
+}
