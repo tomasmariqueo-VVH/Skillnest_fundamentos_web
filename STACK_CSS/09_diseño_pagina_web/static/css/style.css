@@ -27,11 +27,11 @@
 }
 
 .caja_blanca {
-    overflow: hidden;
-    box-sizing: border-box;
+    height: 400px;
+    width: 1100px;
     background-color: whitesmoke;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px gray;
     margin-left: 10%;
@@ -43,45 +43,53 @@
 }
 
 .caja_azul {
-    overflow: hidden;
     height: 150px;
+    width: 1000px;
     text-align: center;
-    margin: auto;
+    margin: 10px;
     background-color: #2C5182;
     color: white;
     border-radius: 5px 5px;
 }
 
 .caja1 {
+    height: 140px;
+    width: 300px;
     margin: 10px;
-    padding: 20px;
+    display: inline-block;
     color: white;
     background-color: #00AEE5;
-    display: inline-block;
-    text-align: center;
     border-radius: 5px 5px;
+    text-align: center;
 }
 
 .caja2 {
+    height: 140px;
+    width: 300px;
     margin: 10px;
-    padding: 20px;
     color: white;
     background-color: #00AEE5;
     display: inline-block;
-    text-align: center;
     border-radius: 5px 5px;
+    text-align: center;
 }
 
 .caja3 {
+    height: 140px;
+    width: 300px;
     margin: 10px;
-    padding: 20px;
     color: white;
     background-color: #00AEE5;
     display: inline-block;
-    text-align: center;
     border-radius: 5px 5px;
+    text-align: center;
 }
 
-h2{
+.h2 {
     padding: 30px;
+    text-align: center;
+}
+
+.parrafo {
+    text-align: center;
 }
