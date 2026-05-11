@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+}
+
+.contenedor_principal {
+    background-color: #FFFFFF;
+    padding: 40px 20%;
+}
+
+.header {
+    padding: 30px 0px;
+    background-color: #218715;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 97.5%;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contenedor_cajas {
+    width: 100%;
+}
+
+.caja_azul {
+    background-color: #2B5CDC;
+    width: 26%;
+    height: 400px;
+    padding: 40px 0px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+
+.boton_amarillo {
+    color: #26303F;
+    background-color: #FEEE31;
+    display: inline-block;
+    padding: 12px 0px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.contenido {
+    display: inline-block;
+    width: 67%;
+    margin-left: 4%;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.caja_roja {
+    background-color: #E52113;
+    width: 100%;
+    padding: 20px;
+}
+
+.cajas_amarillas {
+    background-color: #FEF305;
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    margin: 0 1%;
+}
+
+.caja_morada {
+    background-color: #8E2386;
+    text-align: center;
+    padding: 30px 0px;
+    margin-top: 20px;
+    margin-left: 1%;
+    font-size: 16px;
+    width: 96%;
+}
+
+.boton_blanco {
+    background-color: #EFEAEE;
+    color: #8E2386;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lineas{
+    margin-top: 30px;
+    padding-left: 15px;
+}
+
+.linea{
+    background-color: #C3C3C7;
+    height: 8px;
+    margin-bottom: 16px;
+    width: 95%;
+}
+
+.corta{
+    width: 75%;
+}
