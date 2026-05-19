@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor de filas */
+.row {
+    display: flex;
+}
+
+/* Estilos generales para columnas */
+.col {
+    padding: 20px;
+    background-color: #87CEEB;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 10px;
+    flex: 1;
+}
+
+/* Ajuste de tamaños específicos */
+.col-2 {
+    background-color: #87CEEB;
+    flex: 2;
+}
+
+.col-3 {
+    background-color: #87CEEB;
+    flex: 3;
+}

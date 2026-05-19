@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px black;
+}
+
+body {
+    background-color: rgb(197, 253, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Diseño NAV */
+
+.nav {
+    background-color: #334155;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    /* Centrar contenido con flex */
+    gap: 20px;
+    /* Separación de elementos con flex */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main {
+    padding: 30px;
+}
+
+.seccion {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.527);
+}
+
+/*CONTENEDOR DE CAJAS*/
+.contenedor {
+    display: flex;
+
+    background-color: #cccccc;
+    height: 200px;
+    border: 3px dashed #94a3b9;
+    margin-top: 20px;
+}
+
+/*LAS CAJAS*/
+.caja {
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    /*Centra horizontalmente*/
+    align-items: center;
+    /*Verticalmente*/
+}
+
+/*EJEMPLOS*/
+/*1.- justify-content + gap*/
+
+.ejemplo1 {
+    justify-content: center;
+    /*Centrar contenido*/
+    gap: 20px;
+}
+
+/*2.- align-items + gap*/
+.ejemplo2 {
+    align-items: center;
+    gap: 20px;
+}
+
+/*3.- flex-direction: column + gap*/
+.ejemplo3{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*4.- space-between + align-items: center*/
+.ejemplo4{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/*5.- centrado perfecto*/
+.caja-grande{
+    width: 180px;
+    height: 100px;
+}
+
+.ejemplo5{
+    justify-content: center;
+    align-items: center;
+}
