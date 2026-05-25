@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.barra_navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px gray;
+}
+
+.logotipo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.blue {
+    color: #0067f7;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.boton_principal {
+    background-color: #206DEB;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.arriba{
+    display: flex;
+    background-color: #e5ecfa;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 80px;
+
+}
+
+.izquierda_arriba{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.derecha_arriba{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.medio{
+    text-align: center;
+    background-color: white;
+    padding: 40px 40px;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icono{
+    width: 200px;
+    height: 200px;
+}
+
+.abajo{
+    background-color: #e5ecfa;
+    display: flex;
+    justify-content: center;
+    padding: 80px 80px;
+}
+
+.texto{
+    text-align: center;
+}
+
+.texto p{
+    margin: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px gray;
+}
+
+.p{
+    padding: 20px;
+}
+
+.imagen{
+    height: 500px;
+    width: 600px;
+}
