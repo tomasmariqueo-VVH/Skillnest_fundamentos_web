@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    /*Altura exagerada para ver scroll*/
+    min-height: 150vh;
+    padding-bottom: 50px;
+}
+
+/*Contenedor Principal*/
+.contenedor_principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    /*margen para que el contenido quede visible*/
+}
+
+.tarjeta {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 5px 15px gray;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.informacion{
+    text-align: center;
+    color: gray;
+}
+
+.imagen{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 70px;
+    left: 68px;
+    border: solid 5px white;
+}
+
+.boton{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}

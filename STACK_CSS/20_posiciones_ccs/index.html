@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomás Mariqueo">
+    <title>Posiciones de elementos CSS</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="barra_navegacion">
+            <h1>Position: static</h1>
+            <a href="#" class="enlace_nav">Haz scroll hacia abajo</a>
+        </nav>
+    </header>
+    <main class="contenedor_principal">
+        <section class="tarjeta">
+            <h2>1. Position: static</h2>
+            <p class="explicacion">El bloque oscuro tiene <code>top:40px</code>en el
+                código, pero al ser <b>static</b>,
+                ignora la orden y se queda en la fila</p>
+            <div class="bloque_normal">Bloque 1</div>
+            <div class="bloque_estatico">Bloque 2 (Intentó moverse)</div>
+            <div class="bloque_normal">Bloque 3</div>
+        </section>
+        <section class="tarjeta">
+            <h2>2. Position: relative</h2>
+            <p class="explicacion">El bloque narajna se movió 25px
+                hacia abajo, pero <b>dejó hueco</b>(el molde punteado)
+                que impide subir al bloque 3
+            </p>
+            <div class="bloque_normal">Bloque 1</div>
+            <div class="molde_fantasma">
+                <div class="bloque_relativo">Bloque 2 (se movió)</div>
+            </div>
+            <div class="bloque_normal">Bloque 3</div>
+        </section>
+        <section class="tarjeta">
+            <h2>3. Position: absolute</h2>
+            <p class="explicacion">El botón rojo (X) flota anclado
+                a la esquina de su contenedor (relative), <b>sin estorbar
+                    ni empujar</b> al texto
+            </p>
+            <div class="ventana_modal">
+                <div class="boton_cerrar">X</div>
+                <p style="color:grey; font-size: 1rem;">Soy el contenido de una 
+                    ventana, la "X" flota encima de mi 
+                    gracias a position absolute</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
