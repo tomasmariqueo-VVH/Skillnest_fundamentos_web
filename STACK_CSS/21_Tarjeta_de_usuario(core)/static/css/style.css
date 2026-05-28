@@ -37,10 +37,13 @@ body {
 
 .titulo{
     text-align: center;
+    font-size: 150%;
 }
 
 .sub_titulo{
+    font-size: 120%;
     color: gray;
+    text-align: center;
 }
 
 .parrafo{
@@ -84,6 +87,7 @@ body {
     background-color: #3498DB;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 div{
