@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ECF0F1;
+}
+
+.barra_nav {
+    background-color: #2C3E50;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.enlace {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.enlace a {
+    margin-top: 4.5px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.boton {
+    background-color: #3498DB;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.contenedor_principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.columna_izquierda{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.tarjeta {
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.superior_tarjeta{
+    background-color: #3498DB;
+    width: 100%;
+    height: 100px;
+}
+
+.descripcion_tarjeta{
+    width: 100%;
+    text-align: center;
+    height: 150px;
+}
+
+.parrafo1{
+    padding: 10px;
+    color: gray;
+}
+
+.click{
+    text-decoration: none;
+    color: #3A9BDC;
+}
+
+.imagen{
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.columna_derecha{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 25px;
+}
+
+.tarjeta_conexiones {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    width: 400px;
+    margin: 10px;
+}
+
+.ver{
+    background-color: white;
+    color: #5BACE2;
+    border-color: #5BACE2;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+}
+
+.row{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 5px;
+}
+
+.row img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
