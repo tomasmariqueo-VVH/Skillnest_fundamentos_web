@@ -13,16 +13,16 @@
 
 // parseInt --> Transforma texto a número
 // prompt pide al usuario un valor
-function ejercicio1(){
+function ejercicio1() {
     let cliente = prompt("Ingrese su nombre: ");
     let producto = parseInt(prompt("Ingrese el monto de compra: "));
-    if(producto >= 50000){
+    if (producto >= 50000) {
         alert(`El monto con descuento es: ${producto - (producto * 0.2)}`)
-    } else if(producto > 30000){
+    } else if (producto > 30000) {
         alert(`El monto con descuento es: ${producto - (producto * 0.1)}`)
-    } else if(producto <= 30000 && producto > 0){
+    } else if (producto <= 30000 && producto > 0) {
         alert(`El monto final es: ${producto}, sin descuento`)
-    } else{
+    } else {
         alert(`Ingrese valores válidos.`)
     }
 }
@@ -39,20 +39,20 @@ function ejercicio1(){
 // “Acceso permitido”
 // o “Acceso denegado”
 
-function ejercicio2(){
-    let edad = parseInt(prompt(""));
-    if(edad > 18){
+function ejercicio2() {
+    let edad = parseInt(prompt("Ingrese su edad"));
+    if (edad > 18) {
         alert(`Acceso permitido!`)
-    } else if(edad < 18 && edad > 0){
+    } else if (edad < 18 && edad > 0) {
         let permitido = prompt("Viene con un acompañante?: si/no ")
-        if(permitido == "si"){
+        if (permitido == "si") {
             alert(`Acceso permitido!`)
-        } else if(permitido == "no"){
+        } else if (permitido == "no") {
             alert(`Acceso denegado!`)
-        } else{
+        } else {
             alert(`Ingrese valores válidos.`)
         }
-    } else{
+    } else {
         alert(`Ingrese valores válidos.`)
     }
 }
@@ -67,19 +67,38 @@ function ejercicio2(){
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
 
-function ejercicio3(){
+function ejercicio3() {
     let temperatura = parseInt(prompt("Ingrese la temperatura: "));
-    if(temperatura >= 35){
+    if (temperatura >= 35) {
         alert(`Temperatura extrema`)
-    } else if(temperatura >= 25){
+    } else if (temperatura >= 25) {
         alert(`Clima caluroso`)
-    } else if(temperatura < 24 && temperatura > 10){
+    } else if (temperatura < 24 && temperatura > 10) {
         alert(`Clima agradable`)
-    } else{
+    } else {
         alert(`Clima frío`)
     }
 }
 
+//Ejercicio 3 corregido
+
+function mostrarTemperatura() {
+    let temperatura = parseInt(prompt("Ingrese la temperatura actual:"))
+    if (temperatura < 10 && temperatura - 30) {
+        mensaje = "Hace frio"
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        mensaje = "Temperatura agradable"
+    } else if (temperatura >= 25 && temperatura <= 50) {
+        mensaje = "Hace calor"
+    } else {
+        mensaje = "❌ Ingrese valores válidos"
+    }
+    //alerta adicional
+    if (temperatura > 35 && temperatura < 50) {
+        mensaje += "\n ⚠ ¡Alerta!: Temperatura extrema";
+    }
+    alert(mensaje)
+}
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
 // Solicitar:
@@ -93,7 +112,18 @@ function ejercicio3(){
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
 
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:")
+    let contraseña = prompt("Ingrese su contraseña:")
 
+    if (usuario === "admin" && contraseña === "12345") {
+        alert("Bienvenido Administrador: " + usuario)
+    } else if (usuario === "admin") {
+        alert("Contraseña incorrecta");
+    } else {
+        alert(`usuario "${usuario}" no encontrado`);
+    }
+}
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -111,7 +141,16 @@ function ejercicio3(){
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
 
+function ejercicio5(){
+    let estudiante = prompt("Ingrese nombre del estudiante:")
+    let nota1 = parseInt(prompt("Ingresa nota:"))
+    let nota2 = parseInt(prompt("Ingresa nota:"))
+    let nota3 = parseInt(prompt("Ingresa nota:"))
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    if(promedio){
 
+    }
+}
 
 // 📌 Requisitos Técnicos
 // Cada ejercicio debe:
