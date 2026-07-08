@@ -147,8 +147,14 @@ function ejercicio5(){
     let nota2 = parseInt(prompt("Ingresa nota:"))
     let nota3 = parseInt(prompt("Ingresa nota:"))
     let promedio = (nota1 + nota2 + nota3) / 3;
-    if(promedio){
-
+    if(promedio >= 6.0){
+        alert("Aprobado con excelencia")
+    } else if(promedio >= 4.0 && promedio <= 5.9){
+        alert("Aprovado")
+    } else if(promedio <= 2.0){
+        alert("Debe asistir a reforzamiento")
+    } else{
+        alert("Reprobado")
     }
 }
 
