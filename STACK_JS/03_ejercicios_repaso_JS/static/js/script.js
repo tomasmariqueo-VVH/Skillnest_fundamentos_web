@@ -24,10 +24,28 @@ console.log(`Conexión con JS correcta!`)
 //- Categoría del envío
 //- Valor correspondiente al despacho
 
-function ejercicio1(){
-    let cliente = prompt("Ingrese su nombre")
-    let paquete = parseInt(prompt("Ingrese el peso de su paquete"))
-    
+function ejercicio1() {
+    let cliente = prompt("Ingrese su nombre: ");
+    let paquete = parseInt(prompt("Ingrese el peso de su paquete: "));
+    let valorDespacho = 2000;
+    let mensaje = "";
+    // Condiciones
+    if (paquete > 0 && paquete < 2) {
+        mensaje = `Paquete pesa: ${paquete}
+        \nValor despacho: ${valorDespacho * paquete}`;
+    } else if (paquete > 2 && paquete <= 5) {
+        mensaje = `Paquete pesa: ${paquete}
+        \nValor despacho: ${valorDespacho * paquete}`;
+    } else if (paquete > 5 && paquete <= 10) {
+        mensaje = `Paquete pesa: ${paquete}
+        \nValor despacho: ${valorDespacho * paquete}`;
+    } else if (paquete > 10 && paquete < 50) {
+        mensaje = `Paquete pesa: ${paquete}
+        \nValor despacho: ${valorDespacho * paquete}`;
+    } else {
+        mensaje = "Ingrese valores válidos!";
+    }
+    alert(mensaje);
 }
 
 //# Ejercicio 2: Acceso a Biblioteca
@@ -56,8 +74,16 @@ function ejercicio1(){
 //
 //Utilizar operadores lógicos para realizar las validaciones.
 //
-//---
-//
+function ejercicio2(){
+let usuario = prompt("Ingrese su tipo de usuario: ");
+let prestamo = Math.floor(Math.random()*30)+1;
+let libros = parseInt(prompt("Ingrese la cantidad de libros solicitados: "));
+let mensaje = "";
+if(usuario === Estudiante){
+    
+}
+}
+//Math.floor(Math.random()*100)+1;
 //# Ejercicio 3: Clasificación Deportiva
 //
 //## Enunciado
