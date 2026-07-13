@@ -74,14 +74,28 @@ function ejercicio1() {
 //
 //Utilizar operadores lógicos para realizar las validaciones.
 //
-function ejercicio2(){
-let usuario = prompt("Ingrese su tipo de usuario: ");
-let prestamo = Math.floor(Math.random()*30)+1;
-let libros = parseInt(prompt("Ingrese la cantidad de libros solicitados: "));
-let mensaje = "";
-if(usuario === Estudiante){
-    
-}
+function ejercicio2() {
+    let usuario = prompt("Ingrese su tipo de usuario: ");
+    let prestamoEstudiante = Math.floor(Math.random() * 10) + 1;
+    let prestamoProfesor = Math.floor(Math.random() * 20) + 1;
+    let libros = parseInt(prompt("Ingrese la cantidad de libros solicitados: "));
+    let mensaje = "";
+    if (usuario === "Estudiante" && libros <= prestamoEstudiante) {
+        mensaje = `Bienvenido Estudiante
+    \nPrestamo de libros concedido`;
+    } else if (libros > prestamoEstudiante) {
+        mensaje = `La cantidad de libros supera el prestamo designado
+        \nPrestamo degenado`;
+    } else if (usuario === "Profesor" && libros <= prestamoProfesor) {
+        mensaje = `Bienvenido Profesor
+    \nPrestamo de libros concedido`;
+    } else if (libros > prestamoProfesor) {
+        mensaje = `La cantidad de libros supera el prestamo designado
+        \nPrestamo degenado`;
+    } else {
+        mensaje = `Ingrese un usuario válido`;
+    }
+    alert(mensaje);
 }
 //Math.floor(Math.random()*100)+1;
 //# Ejercicio 3: Clasificación Deportiva
@@ -102,7 +116,25 @@ if(usuario === Estudiante){
 //- Nombre
 //- Edad
 //- Categoría asignada
-//
+
+function ejercicio3() {
+    let nombre = prompt("Ingrese su nombre: ")
+    let edad = parseInt(prompt("Ingrese su edad: "))
+    let mensaje = "";
+    if (edad <= 10 && edad > 0) {
+        mensaje = `Nombre: ${nombre}\nEdad: ${edad}\nCategoría: niño`
+    } else if (edad <= 11 && edad > 17) {
+        mensaje = `Nombre: ${nombre}\nEdad: ${edad}\nCategoría: niño`
+    } else if (edad <= 18 && edad > 60) {
+        mensaje = `Nombre: ${nombre}\nEdad: ${edad}\nCategoría: niño`
+    } else if (edad <= 60 && edad > 100) {
+        mensaje = `Nombre: ${nombre}\nEdad: ${edad}\nCategoría: niño`
+    } else {
+        mensaje = `Ingrese una edad válida`;
+    }
+    alert(mensaje);
+}
+
 //---
 //
 //# Ejercicio 4: Sistema de Bonificación
@@ -123,7 +155,26 @@ if(usuario === Estudiante){
 //- Nombre
 //- Nivel de antigüedad
 //- Mensaje indicando si recibe o no bonificación.
-//
+
+function ejercicio4() {
+    let nombreTrabajador = prompt("Ingrese su nombre: ");
+    let añosServicio = parseInt(prompt("Ingrese sus años de servicio en la compañía: "));
+    let bono = 10000;
+    let mensaje = "";
+    if (añosServicio <= 0) {
+        mensaje = `${nombreTrabajador}, no se le dará ningún bono`;
+    } else if (añosServicio <= 2) {
+        mensaje = `${nombreTrabajador}, por sus años de servicio, se le ofrecerá un bono de: ${bono * añosServicio}`;
+    } else if (añosServicio > 2 && añosServicio <= 5) {
+        mensaje = `${nombreTrabajador}, por sus años de servicio, se le ofrecerá un bono de: ${bono * añosServicio}`;
+    } else if (añosServicio > 5 && añosServicio <= 10) {
+        mensaje = `${nombreTrabajador}, por sus años de servicio, se le ofrecerá un bono de: ${bono * añosServicio}`;
+    } else {
+        mensaje = `${nombreTrabajador}, por sus años de servicio, se le ofrecerá un bono de: ${bono * añosServicio}`;
+    }
+    alert(mensaje);
+}
+
 //---
 //
 //# Ejercicio 5: Evaluación de Velocidad
@@ -148,5 +199,21 @@ if(usuario === Estudiante){
 //- Nombre del conductor
 //- Velocidad
 //- Clasificación obtenida
+
+function ejercicio5() {
+    let nombreConductor = prompt("Ingrese nombre del conductor: ");
+    let velocidad = parseInt(prompt("Ingrese la velocidad: "))
+    let limiteVelocidad = 90;
+    if (limiteVelocidad <= velocidad && velocidad >= 85) {
+        mensaje = `Velocidad límite`
+    } else if (limiteVelocidad > velocidad && velocidad >= 65) {
+        mensaje = `Velocidad alta, baje la velocidad`
+    } else if (velocidad <= 60 && velocidad > 30) {
+        mensaje = `Velocidad adecuada`
+    } else {
+        mensaje = `Velocidad lenta`
+    }
+alert(mensaje);
+}
 
 //---
