@@ -70,11 +70,37 @@ function manipularArreglos() {
     alert("Elementos eliminados: " + eliminado)
 }
 
-function buscarMayoresEdad() {
-    let edades = [12, 15, 18, 20, 25];
-    for (let i = 0; i < edades.length; i++) {
-        if (edades[i] >= 18) {
-            console.log(edades[i]);
-        }
-    }
+// EJERCICIOS
+
+//Ejercicio 1
+//Crear el siguiente arreglo.
+
+//Mostrar:
+
+//Primera edad.
+//Última edad.
+//Cantidad de elementos.
+
+let edades = [15,18,20,14,25];
+function ejercicio1(){
+    let mensaje = `Primera: ${edades[0]}, Segunda: ${edades[4]}, Elementos: ${edades.length}`
+    alert(mensaje);
 }
+
+//Ejercicio 2
+//Crear un arreglo con cinco nombres.
+
+//Mostrar todos utilizando un ciclo for.
+
+function ejercicio2(){
+    let nombres = ["Ana", "Pedro", "María", "Carlos", "Juan"]
+    for(let i = 0; i <= 4; i++)
+        alert(nombres[i]);
+}
+
+//Ejercicio 3
+//Crear un arreglo con cinco notas.
+//Calcular el promedio.
+//Mostrar:
+
+//Promedio: X
