@@ -70,7 +70,111 @@ function manipularArreglos() {
     alert("Elementos eliminados: " + eliminado)
 }
 
-// EJERCICIOS
+// RECORRER UN ARREGLO
+function recorrerArreglos() {
+    let notas = [6.2, 5.8, 4.1, 7.0, 6.6, 5.5];
+    for (let i = 0; i < notas.length; i++) {
+        console.log(notas[i]);
+        alert(`Mostrando Nota ${i + 1} de ${notas.length}: ${notas[i]}`);
+    }
+}
+
+// SUMAR ELEMENTOS DENTRO UN BUCLE
+
+function sumarElementos() {
+    let ventas = [10000, 5000, 12000, 8000];
+    let total = 0;
+
+    for (let i = 0; i < ventas.length; i++) {
+        total += ventas[i]; // += acumula
+    }
+    alert(`El resultado final es: ${total}`);
+}
+
+// CALCULAR PROMEDIO
+
+function calcularPromedio() {
+    let notas = [5.8, 6.2, 4.9, 6.5];
+    let suma = 0;
+
+    for (let i = 0; i < notas.length; i++) {
+        suma += notas[i];
+    }
+    alert(`La suma acumulada es: ${suma}`)
+    let promedio = suma / notas.length;
+    alert(`El promedio de las notas: ${notas.join(` - `)}\nPromedio: ${promedio}`);
+}
+
+// BUSCAR ELEMENTOS UTILIZANDO CONDICIONES
+
+function buscarMayor() {
+    let edades = [12, 15, 18, 20, 25, 32, 40];
+    let mayores = [];
+    for (let i = 0; i < edades.length; i++) {
+        // Condición para buscar mayores de 18
+        if (edades[i] >= 18) {
+            mayores.push(edades[i]); //Añade la posición que cumpla la condición
+        }
+    }
+    alert(`De la lista de edades: ${edades.join(` / `)}
+    \nLos mayores son: ${mayores.join(` / `)}`)
+}
+
+// ENCONTRAR EL MENOR Y EL MAYOR VALOR
+
+function encontrarMenorMayor() {
+    let numeros = [10, 35, 7, 90, 22, 90, 2];
+    let menor = numeros[0];
+    let mayor = numeros[0];
+
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] < menor) {
+            menor = numeros[i];
+        } else if (numeros[i] > mayor) {
+            mayor = numeros[i];
+        } else {
+            console.log(`Valor que no afecta: ${numeros[i]}`);
+        }
+    }
+    alert(`De los números: ${numeros.join(` - `)}
+    \nEl menor es: ${menor}
+    \nEl mayor es: ${mayor}`);
+}
+
+// EJEMPLO INTEGRADOR
+// Tarea: Unir los console.log en un alert
+// Eliminar el último valor con .pop y mostrarlo 
+// Añadir 2 valores nuevos con .push (usando un prompt)
+// Por último contar la cantidad de ventas que sean mayores a 10.000
+
+function calcularVentas() {
+    let ventas = [5000, 8000, 12000, 3000, 10000, 9000, 4000];
+    let total = 0;
+    let mayores = [];
+    let contadorVentas = 0;
+    let mayor = ventas[0];
+    let valorEliminado = ventas.pop();
+    let valor1 = parseInt(prompt("Ingrese un primer valor: "));
+    let valor2 = parseInt(prompt("Ingrese un segundo valor: "));
+    ventas.push(valor1, valor2);
+
+    for (let i = 0; i < ventas.length; i++) {
+        total += ventas[i];
+        if (ventas[i] > mayor) {
+            mayor = ventas[i];
+            if (ventas[i] >= 10000) {
+                mayores.push(ventas[i])
+                contadorVentas++;
+            }
+        }
+    }
+    alert(`El total de ventas es: ${total}
+        \nLa mayor venta es: ${mayor}
+        \nEl promedio de ventas es: ${total / ventas.length}
+        \nValores sobre $10.000 pesos: ${mayores.join(` - `)}
+        \nConteo de mayores: ${contadorVentas}
+        \nValor eliminado: ${valorEliminado}`);
+}
 
 //Ejercicio 1
 //Crear el siguiente arreglo.
@@ -81,22 +185,22 @@ function manipularArreglos() {
 //Última edad.
 //Cantidad de elementos.
 
-let edades = [15,18,20,14,25];
-function ejercicio1(){
-    let mensaje = `Primera: ${edades[0]}, Segunda: ${edades[4]}, Elementos: ${edades.length}`
-    alert(mensaje);
-}
+//let edades = [15,18,20,14,25];
+//function ejercicio1(){
+//    let mensaje = `Primera: ${edades[0]}, Segunda: ${edades[4]}, Elementos: ${edades.length}`
+//    alert(mensaje);
+//}
 
 //Ejercicio 2
 //Crear un arreglo con cinco nombres.
 
 //Mostrar todos utilizando un ciclo for.
 
-function ejercicio2(){
-    let nombres = ["Ana", "Pedro", "María", "Carlos", "Juan"]
-    for(let i = 0; i <= 4; i++)
-        alert(nombres[i]);
-}
+//function ejercicio2(){
+//    let nombres = ["Ana", "Pedro", "María", "Carlos", "Juan"]
+//    for(let i = 0; i <= 4; i++)
+//        alert(nombres[i]);
+//}
 
 //Ejercicio 3
 //Crear un arreglo con cinco notas.
@@ -104,3 +208,8 @@ function ejercicio2(){
 //Mostrar:
 
 //Promedio: X
+
+//function ejercicio3(){
+//    let notas = ["4.7", "1.5", "4.5", "6.7", "5.5"]
+//    let promedio = (notas[0] + notas[1] + notas[2] + notas[3] + notas[4])
+//}
