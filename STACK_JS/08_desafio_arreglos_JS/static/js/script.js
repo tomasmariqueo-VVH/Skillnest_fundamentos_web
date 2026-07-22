@@ -37,14 +37,11 @@ function cancionFavorita() {
         }
     }
 
-    console.log("La canción", cancionBuscada, "se reprodujo", contador, "veces.");
+    alert(`La canción "${cancionBuscada}" se reprodujo un total de ${contador} veces`);
 }
 
 function organizadorTorneo() {
-    let jugadores = ["Luis",
-        "Andrea", "Carlos", "Sofía",
-        "Pedro", "Martina",
-        "Javier", "Valentina"];
+    let jugadores = ["Luis", "Andrea", "Carlos", "Sofía", "Pedro", "Martina", "Javier", "Valentina"];
     let tamanoGrupo = 3;
     let grupos = [];
     let grupoActual = [];
@@ -57,7 +54,7 @@ function organizadorTorneo() {
         }
     }
 
-    console.log("Grupos formados: ", grupos);
+    alert(`Los grupos formados son: ${grupos.join(` / `)}`)
 }
 
 function listaEspera() {
@@ -70,6 +67,6 @@ function listaEspera() {
     }
     filaClientes = filaClientes.slice(cantidadAtendidos);
 
-    console.log("Clientes atendidos: ", atendidos);
-    console.log("Clientes en espera: ", filaClientes);
+    alert(`Clientes atentidos: ${atendidos}
+        \nLos clientes en espera son: ${filaClientes}`)
 }
