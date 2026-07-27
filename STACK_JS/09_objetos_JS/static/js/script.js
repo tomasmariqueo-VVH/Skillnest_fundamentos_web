@@ -26,22 +26,27 @@ function auto() {
         modelo: "Corolla",
         año: 2023,
         encender: function () {
-            alert("Encendiendo", this.marca, this.modelo);
+            alert(`Encendiendo:
+                \nMarca: ${this.marca}
+                \nModelo: ${this.modelo}
+                \nAño: ${this.año}`);
         }
     };
     auto.encender()
 }
 
 //EJEMPLO 2
-let casa = {
-    direccion: "Av. Siempre Viva 742",
-    habitaciones: 4,
-    baños: 2,
-    mostrarInformacion: function () {
-        alert(this.direccion);
+function casa() {
+    let casa = {
+        direccion: "Av. Siempre Viva 742",
+        habitaciones: 4,
+        baños: 2,
+        mostrarInformacion: function () {
+            alert(`Información: 
+                \nDirección: ${this.direccion} 
+                \nHabitaciones: ${this.habitaciones} 
+                \nBaños: ${this.baños}`);
+        }
     }
-    
+casa.mostrarInformacion()
 }
-
-console.log(casa.direccion);
-casa.mostrarInformacion();
