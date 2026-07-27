@@ -60,10 +60,10 @@ let s2 = sandwichFactory(
 function mostrarPizza() {
     function pizzaOven(corteza, salsas, quesos, ingredientes) {
     let pizza = {};
-    pizza.corteza = "corteza";
-    pizza.salsas = "salsas";
-    pizza.quesos = "quesos";
-    pizza.ingredientes = "ingredientes";
+    pizza.corteza = corteza;
+    pizza.salsas = salsas;
+    pizza.quesos = quesos;
+    pizza.ingredientes = ingredientes;
     return pizza;
 }
 let chicago = pizzaOven(
@@ -76,7 +76,7 @@ alert(`Pizza al estilo "Chicago":
     Corteza: ${chicago.corteza}
     Salsas: ${chicago.salsas}
     Queso: ${chicago.quesos}
-    Extras: ${chicago.ingredientes}`
+    Extras: ${chicago.ingredientes.join(" - ")}`
 );
 let aMano = pizzaOven(
     "tradicional",
@@ -87,8 +87,8 @@ let aMano = pizzaOven(
 alert(`Pizza al estilo "A Mano":
     Corteza: ${aMano.corteza}
     Salsas: ${aMano.salsas}
-    Queso: ${aMano.quesos}
-    Extras: ${aMano.ingredientes}`
+    Queso: ${aMano.quesos.join(" - ")}
+    Extras: ${aMano.ingredientes.join(" - ")}`
 );
 let hawaiana = pizzaOven(
     "tradicional",
@@ -100,7 +100,7 @@ alert(`Pizza al estilo "Hawaiana":
     Corteza: ${hawaiana.corteza}
     Salsas: ${hawaiana.salsas}
     Queso: ${hawaiana.quesos}
-    Extras: ${hawaiana.ingredientes}`
+    Extras: ${hawaiana.ingredientes.join(" - ")}`
 );
 let italiana = pizzaOven(
     "tradicional",
@@ -112,6 +112,6 @@ alert(`Pizza al estilo "Italiana":
     Corteza: ${italiana.corteza}
     Salsas: ${italiana.salsas}
     Queso: ${italiana.quesos}
-    Extras: ${italiana.ingredientes}`
+    Extras: ${italiana.ingredientes.join(" - ")}`
 );
 }
