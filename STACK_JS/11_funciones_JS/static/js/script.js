@@ -74,8 +74,37 @@ Debe sumar a + b y el resultado restarlo por c.
 Devolver el valor final y mostrar con un alert.
 */
 
-function operacion(){
-    function granSuma(a, b, c){
-        return a + b - c;
+function granSuma(a, b, c) {
+    return a + b - c;
+}
+function operacion() {
+    let num1 = parseInt(prompt("Ingrese un primer valor"))
+    let num2 = parseInt(prompt("Ingrese un segundo valor"))
+    let num3 = parseInt(prompt("Ingrese un tercer valor"))
+    let resultado = granSuma(num1, num2, num3);
+    alert(`La operación de ${num1} + ${num2} - ${num3} = ${resultado}`)
+}
+
+/*
+Crear una función que reciba un parámetro y permita a través de un bucle
+contar hasta este.
+Ej: Se recibe el número 5 y muestra: 1 - 2 - 3 - 4 - 5
+*/
+
+function mostrarContador(){
+    let parametro = parseInt(prompt("Ingrese el límite del contador"));
+    let resultado = bucles(parametro);
+    if(parametro <= 100){
+    alert(resultado.join(" - "));
+    } else{
+        alert(`Ingrese un valor menor a 100`)
     }
+}
+
+function bucles(a) {
+    let numeros = [];
+    for (let i = 1; i <= a; i++) {
+        numeros.push(i);
+    } 
+    return numeros;
 }
