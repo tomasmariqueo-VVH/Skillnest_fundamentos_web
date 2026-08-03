@@ -20,7 +20,7 @@ document.getElementById("colorButton2").addEventListener("click", function () {
 function cambiarColor2() {
     let colores = ["#ff4747", "#960505", "#e00000", "#5c0000", "#b63939", "#ca2626"];
     let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    const elemento = document.querySelector("body")
+    const elemento = document.querySelector("#caja1")
     elemento.style.backgroundColor = colorAleatorio;
 }
 
@@ -33,7 +33,7 @@ document.getElementById("colorButton3").addEventListener("click", function () {
 function cambiarColor3() {
     let colores = ["#b3ff00", "#fffb25", "#b8bb00", "#ffd900", "#aabd42", "#ffef0f"];
     let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    const elemento = document.querySelector("#caja1")
+    const elemento = document.querySelector("#caja2")
     elemento.style.backgroundColor = colorAleatorio;
 }
 
