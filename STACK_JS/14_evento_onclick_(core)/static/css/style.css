@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #edf0f7;
+    color: #1a1a1a;
+}
+
+header {
+    background-color: #9a93f8;
+    padding: 16px 40px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.buscador input {
+    width: 380px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.sesion button {
+    background-color: #5d4ce6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sesion button:hover {
+    background-color: #4b3bc9;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.publicaciones {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfiles {
+    flex: 1;
+}
+
+.publicacion, 
+.perfil {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.publicacion .titulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.publicacion .nombre,
+.publicacion .fecha {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    color: #222222;
+}
+
+.publicacion .texto {
+    font-size: 0.95rem;
+    color: #222222;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.publicacion button {
+    margin-top: 18px;
+    background-color: #ff737d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.publicacion button:hover {
+    background-color: #e65c66;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.perfil h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.perfil p {
+    font-size: 0.95rem;
+    color: #222222;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.perfil button {
+    background-color: #00d3c6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.perfil button:hover {
+    background-color: #00b3a8;
+}
