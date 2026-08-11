@@ -9,15 +9,20 @@ boton.addEventListener("click", function () {
     }
 });
 
-let meGusta = document.querySelectorAll(".meGusta");
-let span1 = document.getElementById("")
-let span2 = document.getElementById("")
+let botonSpan1 = document.getElementById("span1")
+let megustas = 12;
 
-meGusta.forEach(function (span) {
-    span.addEventListener("click", function () {
-        alert(span.textContent)
-        span1.innerText++;
-    })
+botonSpan1.addEventListener ("click", function(){
+    megustas++
+    this.innerText = `${megustas} Me gustas`;
+});
+
+let botonSpan2 = document.getElementById("span2")
+let megusta = 0;
+
+botonSpan2.addEventListener ("click", function(){
+    megusta++
+    this.innerText = `${megusta} Me gustas`;
 })
 
 function verPerfil() {
