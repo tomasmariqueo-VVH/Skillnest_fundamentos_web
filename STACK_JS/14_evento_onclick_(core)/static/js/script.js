@@ -14,7 +14,7 @@ let megustas = 12;
 
 botonSpan1.addEventListener ("click", function(){
     megustas++
-    this.innerText = `${megustas} Me gustas`;
+    this.innerText = `${megustas} Me gusta`;
 });
 
 let botonSpan2 = document.getElementById("span2")
@@ -22,7 +22,7 @@ let megusta = 0;
 
 botonSpan2.addEventListener ("click", function(){
     megusta++
-    this.innerText = `${megusta} Me gustas`;
+    this.innerText = `${megusta} Me gusta`;
 })
 
 function verPerfil() {
