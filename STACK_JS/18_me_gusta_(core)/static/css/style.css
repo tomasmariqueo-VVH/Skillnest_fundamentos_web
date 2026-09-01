@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.nav{
+    background-color: #3F3F3F;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+}
+
+.logo{
+color: white;
+padding: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.izquierdo{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.perfil{
+    outline: solid 1px #757575;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
