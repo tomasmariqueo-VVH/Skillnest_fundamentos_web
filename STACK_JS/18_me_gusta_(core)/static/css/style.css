@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,14 +36,96 @@ main{
 }
 
 .perfil{
-    outline: solid 1px #757575;
+    outline: solid 1.2px #3a3a3a;
     border-radius: 10px;
-    padding: 20px;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .perfil img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
+.perfil h3{
+    padding: 8px;
+}
+
+.perfil button{
+    margin-top: 10px;
+    color: white;
+    background-color: #2B9DC0;
+    width: 80px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.derecho{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.derecho h2{
+    margin-top: 20px;
+}
+
+.publicaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 900px;
+}
+
+.publicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    outline: solid 1.2px #2e2e2e;
+}
+
+.texto{
+    flex-direction: column;
+}
+
+.texto h3{
+    padding: 15px;
+}
+
+.texto p{
+    padding: 15px;
+}
+
+.likes{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 11px;
+    height: 25px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+.likes p{
+    text-align: center;
+    padding: 5px;
+}
+
+.likes button{
+    background-color: #FFD06B;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
