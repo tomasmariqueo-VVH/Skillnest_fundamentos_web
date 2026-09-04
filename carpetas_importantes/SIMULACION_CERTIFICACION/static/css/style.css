@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 100%;
+}
+
+.nav {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    height: 27px;
+}
+
+.logo img {
+    height: 20px;
+    width: 20px;
+    margin-top: 3.3px;
+}
+
+.nombre {
+    color: #272727;
+}
+
+.nombre span {
+    color: #F3690B;
+}
+
+.derecha {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 25px;
+    margin-right: 30px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 25px;
+}
+
+.input input {
+    width: 150px;
+    height: 25px;
+}
+
+.input button {
+    height: 25px;
+    width: 40px;
+    color: white;
+    background-color: #FF6500;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.compras {
+    display: flex;
+    gap: 5px;
+    height: 23px;
+}
+
+.compras img {
+    height: 20px;
+    width: 20px;
+    margin-top: 3.3px;
+}
+
+.compras p {
+    margin-top: 4px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffdea9;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    min-width: 100px;
+}
+
+.caja img {
+    width: 100%;
+}
+
+.caja h3 {
+    text-align: center;
+}
+
+.principales {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.platillo_principal {
+    display: flex;
+    flex-direction: row;
+    background-color: #C5C5C5;
+    flex: 4;
+    padding: 1%;
+    gap: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    gap: 30px;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+.p2{
+    font-size: 25px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.linea {
+    text-decoration: underline black;
+}
+
+.naranja {
+    color: orange;
+}
+
+.imagenes{
+    text-align: center;
+    flex: 2;
+    min-width: 100px;
+}
+
+.imagenes img {
+width: 100%;
+}
+
+.recomendaciones{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.recomendaciones h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.recomendacion{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.recomendacion img{
+    width: 90%;
+}
+
+.abajo{
+    margin-top: 5px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: solid 1px gray;
+}
