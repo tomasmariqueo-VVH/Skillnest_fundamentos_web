@@ -120,6 +120,7 @@ body {
     padding: 20px;
     gap: 10px;
     width: 100%;
+    max-width: 1100px;
 }
 
 .caja {
@@ -132,6 +133,8 @@ body {
 
 .caja img {
     width: 100%;
+    max-width: 170px;
+    min-width: 100px;
 }
 
 .caja h3 {
@@ -148,10 +151,13 @@ body {
 .platillo_principal {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #C5C5C5;
-    flex: 4;
-    padding: 1%;
+    flex: 6;
+    padding: 2%;
     gap: 20px;
+    max-height: 450px;
+    gap: 15px;
 }
 
 .texto {
@@ -160,17 +166,18 @@ body {
     text-align: center;
     flex: 1;
     gap: 30px;
+    margin-top: 50px;
 }
 
-.p1{
+.p1 {
     font-size: 30px;
 }
 
-.p2{
+.p2 {
     font-size: 25px;
 }
 
-.negrita{
+.negrita {
     font-weight: bold;
 }
 
@@ -182,42 +189,56 @@ body {
     color: orange;
 }
 
-.imagenes{
+.imagenes {
     text-align: center;
-    flex: 2;
+    flex: 3;
     min-width: 100px;
 }
 
 .imagenes img {
-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 600px;
 }
 
-.recomendaciones{
+.recomendaciones {
     display: flex;
     flex-direction: column;
     flex: 2;
 }
 
-.recomendaciones h1{
+.recomendaciones h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.recomendacion{
-display: flex;
-justify-content: center;
-flex-direction: column;
+.recomendacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.recomendacion img{
-    width: 90%;
+.recomendacion img {
+    width: 100%;
 }
 
-.abajo{
+.abajo {
     margin-top: 5px;
     padding: 4px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: auto;
     outline: solid 1px gray;
+    margin-bottom: 20px;
+}
+
+.boton button {
+    margin: 5px;
+    border-radius: 50%;
+    background-color: orange;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
