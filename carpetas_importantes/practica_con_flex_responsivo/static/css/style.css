@@ -130,7 +130,10 @@ main {
     position: relative;
 }
 
-
+.card-imagen img{
+    width: 100%;
+    min-height: 200px;
+}
 
 /*
     Estos fondos representan
